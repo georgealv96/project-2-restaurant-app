@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Bilbo+Swash+Caps&family=Outfit:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <header>
+      <div id="logo" style="font-family: 'Bilbo Swash Caps', cursive;"><span style="font-family: 'Berkshire Swash', cursive;">V</span>food</div>
+      <section id="nav-links">
+        <div>HOME</div>
+        <div>FOOD MENU</div>
+        <div>MY CART</div>
+        <% if (user) { %>
+          <a href="/logout">LOG OUT</a>
+        <% } else { %>
+            <a href="/auth/google">LOG IN</a>
+        <% } %>
+      </section>
+    </header>
+    <section id="home-footer">
+      <img src="https://cdn.vox-cdn.com/thumbor/2pllrrWb0RBDkxpUeDBFoPN__kE=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22872590/VICTA_EATER_AT_HOME_VENEZUELAN_AREPAS__1.jpg" alt="arepa">
+    </section>

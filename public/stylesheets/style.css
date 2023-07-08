@@ -1,20 +1,52 @@
-.brand-logo {
-  margin-left: 15px;
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
-.card .card-content .card-title {
-  margin-bottom: 10px;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: brown;
+  color: white;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-#search-row form {
-  padding-top: 20px;
+#logo {
+  padding-left: 10vmin;
+  font-size: 6vmin;
 }
 
-.student-name {
-  position: relative;
-  top: -5px;
+#nav-links {
+  display: flex;
+  justify-content: space-around;
+  font-size: 4vmin;
+  width: 70vmax;
+  font-family: 'Outfit', sans-serif;
 }
 
-.collection-item form {
-  margin-top: -5px;
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#home-footer {
+  height: 20vh;
+  width: 100vw;
+  background-color: brown;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
 }
