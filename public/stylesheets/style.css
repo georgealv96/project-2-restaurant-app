@@ -10,9 +10,9 @@ header {
   background-color: rgb(44, 210, 55);
   color: white;
   width: 100vw;
-  position: fixed;
+  /* position: fixed;
   top: 0;
-  left: 0;
+  left: 0; */
 }
 
 #logo {
@@ -73,7 +73,27 @@ a {
   margin-right: 5vw;
 }
 
-#item > img {
-  width: 40vmin;
-  height: 30vmin;
+/* STYLING views/foodItems/index FROM HERE */
+
+#food-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
+
+#food-list-item {
+  background-color: gray;
+  width: 50vmin;
+  height: 40vmin;
+  margin: 1vmin;
+}
+
+#food-list-item > img {
+  width: 30vh;
+  height: 20vh;
+}
+
+/* END OF views/foodItems/index STYLING */
+
+/* STYLING views/foodItems/show */
+

@@ -1,11 +1,13 @@
 <%- include('../partials/header') %>
 
-<% foodItems.forEach(item => { %>
-  <div id="item">
-    <h2><%= item.name %></h2>
-    <p><%= item.description %></p>
-    <img src="<%= item.picture %>" alt="<%= item.name %>">
-  </div>
-<% }) %>
+<section id="food-list">
+  <% foodItems.forEach(item => { %>
+    <a href="/foodItems/<%= item._id %>" id="food-list-item">
+      <h2><%= item.name %></h2>
+      <img src="<%= item.picture %>" alt="<%= item.name %>">
+      <h3>$<%= item.price %></h3>
+    </a>
+  <% }) %>
+</section>
 
 <%- include('../partials/footer') %>
