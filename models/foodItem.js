@@ -22,6 +22,8 @@ const foodItemSchema = new Schema(
     name: String,
     price: Number,
     picture: String,
+    description: String,
+    meal: String,
     reviews: [reviewsSchema],
     addedToCart: Boolean
   },

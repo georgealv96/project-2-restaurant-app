@@ -1,11 +1,11 @@
 <%- include('../partials/header') %>
 
-<body>
-  <% if (user) { %>
-    <a href="/logout">LOG OUT</a>
-   <h1>we did it! user logged in</h1>
-  <% } else { %>
-    <a href="/auth/google">LOG IN</a>
-  <% } %>
-</body>
-</html>
+<% foodItems.forEach(item => { %>
+  <div id="item">
+    <h2><%= item.name %></h2>
+    <p><%= item.description %></p>
+    <img src="<%= item.picture %>" alt="<%= item.name %>">
+  </div>
+<% }) %>
+
+<%- include('../partials/footer') %>

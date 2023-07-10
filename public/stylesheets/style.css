@@ -72,3 +72,8 @@ a {
 #home-footer > button {
   margin-right: 5vw;
 }
+
+#item > img {
+  width: 40vmin;
+  height: 30vmin;
+}
