@@ -31,4 +31,5 @@ const foodItemSchema = new Schema(
 )
 
 // Compiling the schema into a model and exporting it
-module.exports = mongoose.model('FoodItem', foodItemSchema)
+const FoodItem = mongoose.model('FoodItem', foodItemSchema)
+module.exports = FoodItem
