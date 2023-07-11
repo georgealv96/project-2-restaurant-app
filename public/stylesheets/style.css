@@ -97,3 +97,6 @@ a {
 
 /* STYLING views/foodItems/show */
 
+#show-item img {
+  width: 60vmin;
+}
