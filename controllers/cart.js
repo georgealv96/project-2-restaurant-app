@@ -1,24 +1,19 @@
 const Cart = require('../models/cart')
-const FoodItem = require('../models/foodItem')
 
 module.exports = {
   index
 }
 
-// !!!!!!!!!!!!!!!!! FIX THIS
 async function index(req, res) {
-  const cart = await Cart.find({})
   try {
-    // If there's not a user logged in then just show the cart page with an error message
+    // If there's not a user logged in, show the cart page with an error message
     if (!req.user)
       return res.render('cart/index', {
-        errorMsg: 'You need to log in first to see the cart!'
+        errorMsg: "YOU HAVEN'T LOGGED IN YET!"
       })
-    // Assiging the cart to a user
-    cart[0].user = req.user._id
-    console.log(cart[0])
-    // Showing the cart page
-    res.render('cart/index', { cart: cart[0] })
+    // Find a cart that matches the user
+    const cart = await Cart.findOne({ user: req.user._id })
+    res.render('cart/index', { cart })
   } catch (err) {
     res.send(err)
   }
