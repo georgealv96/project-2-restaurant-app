@@ -1,5 +1,13 @@
 <%- include('../partials/header') %>
 
-  <h1>This is the cart</h1>
+  <section id="cart">
+    <% if (user) { %>
+      <% cart.foodItems.forEach(item => { %>
+        <h2>mmmmm</h2>
+      <% }) %>
+    <% } else {%>
+      <h1>OH NO! <%= errorMsg %></h1>
+    <% } %>
+  </section>
 
 <%- include('../partials/footer') %>

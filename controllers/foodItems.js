@@ -1,8 +1,10 @@
 const FoodItem = require('../models/foodItem')
+const Cart = require('../models/cart')
 
 module.exports = {
   index,
-  show
+  show,
+  edit
 }
 
 async function index(req, res) {
@@ -21,4 +23,15 @@ async function show(req, res) {
   } catch (err) {
     res.send(err)
   }
+}
+
+/// !!!!!!!!!!!!!!!!! FIX THIS
+async function edit(req, res) {
+  const foodItem = await FoodItem.findById(req.params.id)
+  const cart = await Cart.find({})
+  console.log(cart)
+  // cart.foodItems.push(req.params.id)
+  // await cart.save()
+  // console.log(cart)
+  res.redirect(`/foodItems/${req.params.id}`)
 }

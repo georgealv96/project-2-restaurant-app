@@ -3,7 +3,7 @@
   <img src="<%= foodItem.picture %>" alt="<%= foodItem.name %>">
   <h2><%= foodItem.name %></h2>
   <% if (user) { %>
-    <form action="/foodItems/<%= foodItem._id %>" method="GET">
+    <form action="/foodItems/<%= foodItem._id %>?_method=PUT" method="POST">
       <button type="submit">Add to Cart</button>
     </form>
   <% } %>
