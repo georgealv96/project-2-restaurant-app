@@ -10,10 +10,8 @@ async function create(req, res) {
     // Finding the food item the reviews is going to be created at
     const foodItem = await FoodItem.findById(req.params.id)
     // Getting the user's object and name
-    req.body.user = req.user._id // !!!
-    req.body.userName = req.user.name // !!!
-    console.log(typeof req.user._id) // !!!
-    console.log(typeof req.body.user) // !!!
+    req.body.user = req.user._id
+    req.body.userName = req.user.name
     // Inserting the review to the list of reviews of that specific food item
     foodItem.reviews.push(req.body)
     // Saving changes in the database
