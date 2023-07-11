@@ -2,5 +2,16 @@
 <section id="show-item">
   <img src="<%= foodItem.picture %>" alt="<%= foodItem.name %>">
   <h2><%= foodItem.name %></h2>
+  <h4>Reviews:</h4>
+  <% foodItem.reviews.forEach(review => { %>
+    <p><%= review.content %></p>
+  <% }) %>
+  <% if (user) { %>
+    <form action="/foodItems/<%= foodItem._id %>/reviews" method="POST">
+    <textarea name="content"></textarea>
+    <input type="submit" value="Add Review">
+  <% } %>
+
+  </form>
 </section>
 <%- include('../partials/footer') %>

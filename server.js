@@ -17,6 +17,7 @@ require('./config/passport')
 // mount all routes with appropriate base paths
 const indexRouter = require('./routes/index')
 const foodItemsRouter = require('./routes/foodItems')
+const reviewsRouter = require('./routes/reviews')
 
 // create the Express app
 const app = express()
@@ -54,6 +55,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/', indexRouter)
 app.use('/foodItems', foodItemsRouter)
+app.use('/', reviewsRouter)
 
 // invalid request, send 404 page
 app.use(function (req, res) {
