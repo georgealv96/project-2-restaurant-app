@@ -47,9 +47,9 @@ async function update(req, res) {
       })
     }
 
-    // Saving changes in the database and redirecting
+    // Saving changes in the database and redirecting where the request was made from
     await cart.save()
-    res.redirect(`/foodItems/${req.params.id}`)
+    res.redirect('back')
   } catch (err) {
     res.send(err)
   }
