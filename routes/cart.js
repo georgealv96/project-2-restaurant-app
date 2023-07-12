@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const cartCtrl = require('../controllers/cart')
+const cartCtrl = require('../controllers/carts')
 
 // GET /cart
 router.get('/cart', cartCtrl.index)

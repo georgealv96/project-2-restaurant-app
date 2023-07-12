@@ -12,8 +12,7 @@ const foodItems = [
     description:
       'An Arepa is a corn griddle cake made from pre-cooked cornmeal, it is very popular in Venezuela and Colombia, where it is served daily with a variety of toppings to complement them. They were traditionally prepared in a pan known as a budare. However, they can be grilled, fried, or baked as well.',
     meal: 'Entree',
-    reviews: [],
-    addedToCart: false
+    reviews: []
   },
   {
     name: 'Empanadas',
@@ -23,8 +22,7 @@ const foodItems = [
     description:
       'Basically, a Venezuelan Empanada is made with corn dough, then stuffed with anything you can imagine (chicken, meat, cheeses, cazón (shark), black beans, ham, etc.), and then deep-fried.',
     meal: 'Entree',
-    reviews: [],
-    addedToCart: false
+    reviews: []
   },
   {
     name: 'Cachapas',
@@ -34,8 +32,7 @@ const foodItems = [
     description:
       'Crispy on the outside and tender on the inside, Cachapas are savory-sweet corn pancakes, a traditional street food in Venezuela. They are typically eaten with queso de mano (a popular Venezuelan fresh cheese which origin dates from approximately the 16th century), fried pork chops, or just butter.',
     meal: 'Entree',
-    reviews: [],
-    addedToCart: false
+    reviews: []
   },
   {
     name: 'Hallacas',
@@ -45,8 +42,7 @@ const foodItems = [
     description:
       'Hallaca is a traditional dish from Venezuela that is served during Christmastime. It is one of the many types of tamal that exist throughout America, although different in flavor, texture, ingredients, and cultural significance than the other types of tamales. It consists of a corn flour dough seasoned with chicken or chicken broth and pigmented with onoto or achiote, stuffed with beef, pork and chicken stew, to which olives, raisins, capers, paprika and onion are added. Hallacas are wrapped in banana leaves instead of corn husks.',
     meal: 'Entree',
-    reviews: [],
-    addedToCart: false
+    reviews: []
   },
   {
     name: 'Pabellón Criollo',
@@ -56,8 +52,7 @@ const foodItems = [
     description:
       "Pabellón Criollo is a traditional Venezuelan recipe and Venezuela's national dish made with shredded beef that is typically served with white rice, black beans and fried plantains. It's basically the local version of the rice and beans combination found throughout the Caribbean.",
     meal: 'Entree',
-    reviews: [],
-    addedToCart: false
+    reviews: []
   },
   {
     name: 'Asado Negro',
@@ -67,8 +62,7 @@ const foodItems = [
     description:
       "Asado Negro is one of the most traditional dishes in Venezuela. It’s an eye-round roast slow cooked in a slightly sweet and super flavorful dark sauce. Each Venezuelan family has their own version, but it's usually served with white rice and fried plantains. It's perfect for a Holiday party or Sunday family dinner.",
     meal: 'Entree',
-    reviews: [],
-    addedToCart: false
+    reviews: []
   },
   {
     name: 'Sancocho',
@@ -78,8 +72,7 @@ const foodItems = [
     description:
       'The Venezuelan Sancocho is a soup made with short beef ribs, big fat carrots, potatoes, pumpkin, corn, and yuca (cassava), adding lots of cilantro and lime. You often eat Sancocho with Arepas. And this soup will warm your insides, cure what ails you, and definitely take care of a hangover.',
     meal: 'Entree',
-    reviews: [],
-    addedToCart: false
+    reviews: []
   },
   {
     name: 'Pan de Jamón',
@@ -89,8 +82,7 @@ const foodItems = [
     description:
       'Pan de Jamón (Venezuelan Ham Bread) is a savory rolled bread that is a staple on Venezuelan tables during the December holiday season. A simple filling of ham, raisins, and olives. That’s all that is traditionally rolled into this soft and slightly sweet dough. Its robust flavors are a unique tribute to Venezuelan culture.',
     meal: 'Entree',
-    reviews: [],
-    addedToCart: false
+    reviews: []
   },
   {
     name: 'Patacón',
@@ -100,8 +92,7 @@ const foodItems = [
     description:
       '"Patacón Maracucho" or simply "Patacón" (Fried Plantain Sandwich) is a Venezuelan specialty that consists of layers of meat, vegetables, and different sauces sandwiched between fried, flattened, and refried plantains. Its full name identifies its birthplace as the Venezuelan city of Maracaibo.',
     meal: 'Entree',
-    reviews: [],
-    addedToCart: false
+    reviews: []
   },
   {
     name: 'Pasticho',
@@ -111,8 +102,7 @@ const foodItems = [
     description:
       'Pasticho is the Venezuelan version of Italian lasagna or Greek pastitsio. Layers of pasta, bolognese sauce, bechamel, mozzarella cheese, ham and topped with a lot of parmesan cheese. A scrumptious, indulgent and filling dinner.',
     meal: 'Entree',
-    reviews: [],
-    addedToCart: false
+    reviews: []
   },
   {
     name: 'Pisca Andina',
@@ -122,8 +112,7 @@ const foodItems = [
     description:
       'The Andean Soup called “Pisca Andina” is usually eaten as part of breakfast or dinner in the Andean Region of Venezuela. It consists of potatoes, milk, eggs, fresh cheese and is flavored with cilantro; it can be accompanied with an arepa or saltines and black coffee or milk.',
     meal: 'Entree',
-    reviews: [],
-    addedToCart: false
+    reviews: []
   },
   {
     name: 'Golfeados',
@@ -133,8 +122,7 @@ const foodItems = [
     description:
       "Golfeados are a Venezuelan pastry. It's in effect our version of sticky buns but with a couple of distinct twists. The filling is not just butter and sugar, there's also cheese in there, and they're made with panela (raw hardened unrefined cane sugar juice) instead of regular sugar. Plus, these sweet rolls are usually flavored with anise.",
     meal: 'Dessert',
-    reviews: [],
-    addedToCart: false
+    reviews: []
   },
   {
     name: 'Quesillo',
@@ -144,8 +132,7 @@ const foodItems = [
     description:
       'Quesillo is a very popular flan in Venezuela. This traditional Venezuelan dessert consists mainly of eggs, milk, condensed milk, caramelized sugar and vanilla extract. It is usually prepared in a large tin, at the bottom of which a thin layer of caramel has been placed beforehand. It is often eaten for birthdays and traditional celebrations. Traditionally, it is cooked in the oven in a bain-marie for an hour. The preparation is very liquid and solidifies during cooking.',
     meal: 'Dessert',
-    reviews: [],
-    addedToCart: false
+    reviews: []
   },
   {
     name: 'Dulce de Lechosa',
@@ -155,8 +142,7 @@ const foodItems = [
     description:
       'Dulce de Lechosa (Candied Papaya) is a very delicious sweet made with green Papaya and a rich spiced syrup, an it is part of our Venezuelan Christmas traditions.',
     meal: 'Dessert',
-    reviews: [],
-    addedToCart: false
+    reviews: []
   },
   {
     name: 'Palmeritas',
@@ -166,8 +152,7 @@ const foodItems = [
     description:
       'Palmeritas are a very popular sweet in all bakeries and pastry shops in Venezuela. The base of this sweet is puff pastry, a dough of flour and butter (margarine or lard) made by layering many thin sheets. The palmerita was originally a French specialty (in French, palmier). Palmeritas are usually around an inch thick and have a specific heart shape.',
     meal: 'Dessert',
-    reviews: [],
-    addedToCart: false
+    reviews: []
   },
   {
     name: 'Majarete',
@@ -177,8 +162,7 @@ const foodItems = [
     description:
       'In Venezuela, Majarete is like a corn-coconut pudding made with cornflour and coconut milk. It also has a little bit of papelon (brown sugar cane), which adds a unique flavor. The Venezuelan Majarete custard is so creamy, and the cinnamon and nutmeg added to it make the dessert so aromatic.',
     meal: 'Dessert',
-    reviews: [],
-    addedToCart: false
+    reviews: []
   },
   {
     name: 'Cocada',
@@ -188,8 +172,7 @@ const foodItems = [
     description:
       'Cocada (Frozen Coconut Smoothie) is a traditional Venezuelan frozen drink that is made with fresh coconut meat, milk, and sweetened condensed milk, then sprinkled with cinnamon and drizzled with more sweetened condensed milk.',
     meal: 'Drink',
-    reviews: [],
-    addedToCart: false
+    reviews: []
   },
   {
     name: 'Tizana',
@@ -198,8 +181,7 @@ const foodItems = [
     description:
       'The Venezuelan tizana is a super-flex fruit punch for any kind of gathering. It is beautiful, colorful, fruit filled and loved by all ages. As you may or may not know, in Venezuela we have summer-like weather all year long, so this drink is very popular.',
     meal: 'Drink',
-    reviews: [],
-    addedToCart: false
+    reviews: []
   },
   {
     name: 'Chicha',
@@ -209,8 +191,7 @@ const foodItems = [
     description:
       'A Venezuelan Chicha is a super thick drink made with rice and milk. It is dense and if you add a lot of ice you get a refreshing and fulfilling drink that tastes like heaven. This popular drink is loved by people of all ages; some like to liven up their chicha by adding condensed milk or cinnamon once it’s ready.',
     meal: 'Drink',
-    reviews: [],
-    addedToCart: false
+    reviews: []
   },
   {
     name: 'Malta',
@@ -220,8 +201,7 @@ const foodItems = [
     description:
       'Malta is a kind of soda drink. It is a carbonated malt drink, that is, it is prepared from barley, hops and water like beer; it can also carry corn and caramel color. However, malt does not contain alcohol and is consumed in the same way as soda or cola in its original carbonated form and, to some extent, as iced tea in non-carbonated form.',
     meal: 'Drink',
-    reviews: [],
-    addedToCart: false
+    reviews: []
   },
   {
     name: 'Frescolita',
@@ -231,8 +211,7 @@ const foodItems = [
     description:
       'Frescolita is a carbonated drink, it has a reddish color and is sweet. Its taste is like a combination of cream soda and gum flavor. Well-known among the Venezuelan community.',
     meal: 'Drink',
-    reviews: [],
-    addedToCart: false
+    reviews: []
   },
   {
     name: 'Papelón con Limón',
@@ -242,8 +221,7 @@ const foodItems = [
     description:
       'Papelón con Limón (Panela with Lemon) is a refreshing Venezuelan beverage made with panela (raw hardened sugar cane juice), water and lemon or lime juice. It is usually served during the hottest hours of the day, and commonly offered with traditional Venezuelan food.',
     meal: 'Drink',
-    reviews: [],
-    addedToCart: false
+    reviews: []
   },
   {
     name: 'Pastelitos',
@@ -253,8 +231,7 @@ const foodItems = [
     description:
       'Venezuelan Fried Pastries best called Pastelitos, are among the most beloved street food options along with Arepas, Empanadas, and Tequeños in Venezuela. Venezuelans eat these flaky wheat-based pastries for breakfast, lunch, dinner, as a snack or as "pasapalos" (appetizers) at parties. They are super versatile and can be filled with almost anything, (fresh cheese, beef, chicken, fish, rice and meat or seafood stews).',
     meal: 'Appetizer',
-    reviews: [],
-    addedToCart: false
+    reviews: []
   },
   {
     name: 'Tequeños',
@@ -264,8 +241,7 @@ const foodItems = [
     description:
       "Tequeños are a popular meal or snack in Venezuela. They are basically white cheese sticks wrapped with a crunchy and slightly sweet dough. And as most delicious things, Tequeños are fried. Most Venezuelans might feel offended when somebody compares this deliciousness with 'Cheese Sticks' or 'Mozzarella Sticks' because Tequeños are somehow unique.",
     meal: 'Appetizer',
-    reviews: [],
-    addedToCart: false
+    reviews: []
   },
   {
     name: 'Tostones',
@@ -275,8 +251,7 @@ const foodItems = [
     description:
       'Tostones are made with green plantain slices fried in oil, then flattened and fried again. You can have them just seasoned with salt and fresh garlic, and also you can put on the top coleslaw salad, and they are also traditional ly eaten in the Venezuelan coast with fried fish.',
     meal: 'Appetizer',
-    reviews: [],
-    addedToCart: false
+    reviews: []
   },
   {
     name: 'Mandocas',
@@ -286,8 +261,7 @@ const foodItems = [
     description:
       'Mandocas are flavored corn fritters that are deep-fried cornmeal rings. These tasty treats are usually served at breakfast and eaten with butter and cheese while still hot. They are made with papelon or brown sugar cane, allspice, cinnamon, anise seeds, white cornmeal, plantains, and Venezuelan fresh white cheese. This sweet treat from the south is a culinary treat for the ages.',
     meal: 'Appetizer',
-    reviews: [],
-    addedToCart: false
+    reviews: []
   }
 ]
 

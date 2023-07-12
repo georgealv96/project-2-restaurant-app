@@ -4,7 +4,7 @@ const Cart = require('../models/cart')
 module.exports = {
   index,
   show,
-  edit
+  update
 }
 
 async function index(req, res) {
@@ -25,13 +25,32 @@ async function show(req, res) {
   }
 }
 
-/// !!!!!!!!!!!!!!!!! FIX THIS
-async function edit(req, res) {
-  const foodItem = await FoodItem.findById(req.params.id)
-  const cart = await Cart.find({})
-  console.log(cart)
-  // cart.foodItems.push(req.params.id)
-  // await cart.save()
-  // console.log(cart)
-  res.redirect(`/foodItems/${req.params.id}`)
+async function update(req, res) {
+  try {
+    // Finding the user's cart
+    const cart = await Cart.findOne({ user: req.user._id })
+
+    let isInTheCart = false
+    // Comparing each item currently in the cart to the selected one
+    for (eachItem of cart.foodItems) {
+      // If the selected item is already found in the cart, then its amount is going to be increased
+      if (eachItem.item.toString() === req.params.id) {
+        isInTheCart = true
+        eachItem.amount++
+      }
+    }
+    // If the selected item is not in the cart, then add it
+    if (!isInTheCart) {
+      cart.foodItems.push({
+        item: req.params.id,
+        amount: 1
+      })
+    }
+
+    // Saving changes in the database and redirecting
+    await cart.save()
+    res.redirect(`/foodItems/${req.params.id}`)
+  } catch (err) {
+    res.send(err)
+  }
 }

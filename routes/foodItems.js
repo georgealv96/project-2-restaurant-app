@@ -7,6 +7,6 @@ router.get('/', foodItemsCtrl.index)
 // GET /foodItems/:id
 router.get('/:id', foodItemsCtrl.show)
 // PUT /foodItems/:id
-router.put('/:id', foodItemsCtrl.edit)
+router.put('/:id', foodItemsCtrl.update)
 
 module.exports = router

@@ -25,8 +25,7 @@ const foodItemSchema = new Schema(
     picture: String,
     description: String,
     meal: String,
-    reviews: [reviewSchema],
-    addedToCart: Boolean
+    reviews: [reviewSchema]
   },
   {
     timestamps: true
