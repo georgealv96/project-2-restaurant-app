@@ -2,7 +2,8 @@ const Cart = require('../models/cart')
 const FoodItem = require('../models/foodItem')
 
 module.exports = {
-  index
+  index,
+  delete: deleteItem
 }
 
 async function index(req, res) {
@@ -35,5 +36,20 @@ async function index(req, res) {
     res.render('cart/index', { cart, itemsInCart, totalAmount })
   } catch (err) {
     res.send(err)
+  }
+}
+
+async function deleteItem(req, res, next) {
+  try {
+    // Finding a cart that matches the user
+    const cart = await Cart.findOne({ user: req.user._id })
+    // Removing the item selected from the items in the cart and saving changes in the database
+    await cart.foodItems.remove({ item: req.params.id })
+    await cart.save()
+
+    // Redirecting back to the cart/index view
+    res.redirect('/cart')
+  } catch (err) {
+    next(err)
   }
 }

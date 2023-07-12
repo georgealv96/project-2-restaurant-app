@@ -9,7 +9,7 @@ const cartSchema = new Schema(
       ref: 'User'
     },
     foodItems: [
-      { item: { type: Schema.Types.ObjectId, ref: 'FoodItem' }, amount: Number } /// !!!?
+      { item: { type: Schema.Types.ObjectId, ref: 'FoodItem' }, amount: Number }
     ]
   },
   {

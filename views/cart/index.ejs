@@ -2,11 +2,14 @@
 
   <section id="cart">
     <% if (user) { %>
-        <% itemsInCart.forEach(itemInCart => { %>
-        <h1>[<%= itemInCart.amount %>] <%= itemInCart.item.name %></h1>
-        <p>price: $<%= itemInCart.item.price %></p>
-        <% }) %>
-        <h1>TOTAL: <%= (Math.round(totalAmount * 100) / 100).toFixed(2) %></h1>
+      <% itemsInCart.forEach(itemInCart => { %>
+      <h1>[<%= itemInCart.amount %>] <%= itemInCart.item.name %></h1>
+      <p>price: $<%= itemInCart.item.price %></p>
+      <form action="/in-cart-items/<%= itemInCart.item._id %>?_method=DELETE" method="POST">
+        <button type="submit">Delete</button>
+      </form> 
+      <% }) %>
+      <h1>TOTAL: <%= (Math.round(totalAmount * 100) / 100).toFixed(2) %></h1>
     <% } else {%>
       <h1>OH NO! <%= errorMsg %></h1>
     <% } %>
