@@ -89,14 +89,14 @@ header a {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 3vmin 2vmin;
+  padding: 0 2vmin;
 }
 
 .food-list-item {
   background-color: brown;
   width: 40vmin;
   height: 62vmin;
-  margin: 3vmin 2vmin;
+  margin: 0 2vmin 4vmin 2vmin;
 }
 
 .food-list-item > h1 {
@@ -133,7 +133,8 @@ header a {
   width: 10vmin;
   color: brown;
   border-style: none;
-  border-radius: 10%;
+  border-radius: 1vmin;
+  cursor: pointer;
 }
 
 h2 > span {
@@ -144,14 +145,119 @@ h2 > span {
   height: 69vmin;
 }
 
-#item-amount {
+#title, #total-amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 5vmin;
-  padding: 2vmin 0 2vmin 0;
+  padding: 6vmin 0;
+  font-size: 6vmin;
+  font-family: 'Outfit', sans-serif;
+  color: brown;
+}
+
+#total-amount {
+  padding: 2vmin 0;
   font-size: 4vmin;
+  color: white;
 }
 
 /* STYLING foodItems/show FROM HERE*/
 
+#show-item {
+  min-height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "image info"
+    "reviews reviews";
+}
+
+#show-item-image {
+  height: 70vh;
+  padding-bottom: 6vmin;
+  grid-area: image;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  /* background-color: blue; */
+}
+
 #show-item img {
-  width: 60vmin;
+  width: 65vmin;
+  height: 45vmin;
+}
+
+#show-item img {
+  margin-bottom: 3vmin;
+}
+
+#show-item-image button {
+  font-size: 4vmin;
+  padding: 1vmin;
+  margin-bottom: 1vmin;
+  background-color: brown;
+  color: white;
+  border-style: none;
+  border-radius: 1vmin;
+  cursor: pointer;
+}
+
+#show-item-info {
+  height: 70vh;
+  grid-area: info;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#show-item-info > h1 {
+  font-family: 'Comfortaa', cursive;
+  font-size: 8vmin;
+  margin-right: 15vmin;
+}
+
+#show-item-info > p {
+  font-family: 'Courgette', cursive;
+  font-size: 3vmin;
+  margin: 3vmin 15vmin 4vmin 0;
+}
+
+#show-item-info > h2 {
+  align-self: flex-start;
+  padding: 0 1vmin;
+  font-size: 8vmin;
+  margin-right: 15vmin;
+  background-color: rgb(44, 210, 55);
+  border-radius: 1vmin;
+}
+
+#show-item-reviews {
+  border-top: solid 2px brown;
+  padding-top: 3vmin;
+  min-height: 20vh;
+  grid-area: reviews;
+  /* background-color: green; */
+}
+
+#show-item-reviews > h3 {
+  font-size: 6vmin;
+  padding: 0 0 2vmin 35vmin;
+}
+
+#review {
+  display: flex;
+  flex-direction: column;
+  /* background-color: gray; */
+  margin: 0 0 2vmin 8vmin;
+}
+
+#review > h4 {
+  font-size: 4vmin;
+}
+
+#review > p {
+  padding: 2vmin 3vmin;
 }

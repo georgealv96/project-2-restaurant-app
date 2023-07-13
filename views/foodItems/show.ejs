@@ -1,26 +1,43 @@
 <%- include('../partials/header') %>
+
 <section id="show-item">
-  <img src="<%= foodItem.picture %>" alt="<%= foodItem.name %>">
-  <h2><%= foodItem.name %></h2>
-  <% if (user) { %>
-    <form action="/foodItems/<%= foodItem._id %>?_method=PUT" method="POST">
-      <button type="submit">Add to Cart</button>
-    </form>
-  <% } %>
-  <h4>Reviews:</h4>
-  <% foodItem.reviews.forEach(review => { %>
-    <p><%= review.userName %>: <%= review.content %></p>
-    <% if (user && user._id.equals(review.user)) { %>
-      <form action="/reviews/<%= review._id %>?_method=DELETE" method="POST">
-        <button type="submit">Delete</button>
-      </form> 
+  <div id="show-item-image">
+    <img src="<%= foodItem.picture %>" alt="<%= foodItem.name %>">
+    <% if (user) { %>
+      <form action="/foodItems/<%= foodItem._id %>?_method=PUT" method="POST">
+        <button type="submit">Add to My Cart</button>
+      </form>
     <% } %>
-  <% }) %>
-  <% if (user) { %>
-    <form action="/foodItems/<%= foodItem._id %>/reviews" method="POST">
-      <textarea name="content"></textarea>
-      <input type="submit" value="Add Review">
-    </form>
-  <% } %>
+  </div>
+  <div id="show-item-info">
+    <h1><%= foodItem.name %></h1>
+    <p><%= foodItem.description %></p>
+    <h2>$<%= foodItem.price %></h2>
+  </div>
+  <div id="show-item-reviews">
+    <h3>Reviews</h3>
+    <% if (foodItem.reviews.length === 0) { %>
+      <h1>empty!</h1> 
+    <% } else { %>
+      <% foodItem.reviews.forEach(review => { %>
+        <div id="review">
+          <h4><%= review.userName %> <span>said:</span></h4>
+          <p><%= review.content %></p>
+          <% if (user && user._id.equals(review.user)) { %>
+            <form action="/reviews/<%= review._id %>?_method=DELETE" method="POST">
+              <button type="submit">Delete</button>
+            </form> 
+          <% } %>
+        </div>
+      <% }) %>
+    <% } %>
+    <% if (user) { %>
+      <form action="/foodItems/<%= foodItem._id %>/reviews" method="POST">
+        <textarea name="content"></textarea>
+        <input type="submit" value="Add Review">
+      </form>
+    <% } %>
+  </div>
 </section>
+
 <%- include('../partials/footer') %>

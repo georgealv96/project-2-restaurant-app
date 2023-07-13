@@ -40,7 +40,7 @@ const foodItems = [
     picture:
       'https://imgmedia.larepublica.pe/640x377/larepublica/migration/images/7F5UWCI26ZCPVLRVODF622BPYA.webp',
     description:
-      'Hallaca is a traditional dish from Venezuela that is served during Christmastime. It is one of the many types of tamal that exist throughout America, although different in flavor, texture, ingredients, and cultural significance than the other types of tamales. It consists of a corn flour dough seasoned with chicken or chicken broth and pigmented with onoto or achiote, stuffed with beef, pork and chicken stew, to which olives, raisins, capers, paprika and onion are added. Hallacas are wrapped in banana leaves instead of corn husks.',
+      'Hallaca is a traditional dish from Venezuela that is served during Christmastime. It is one of the many types of tamal that exist throughout America, although different in flavor, texture, ingredients, and cultural significance than the other ones. It consists of a corn flour dough seasoned with chicken or chicken broth and pigmented with onoto or achiote, stuffed with beef, pork and chicken stew, to which olives, raisins, capers, paprika and onion are added. Hallacas are wrapped in banana leaves instead of corn husks.',
     meal: 'Entree',
     reviews: []
   },
@@ -130,7 +130,7 @@ const foodItems = [
     picture:
       'https://www.recetasjudias.com/wp-content/uploads/2015/12/Flan-Quesillo.jpg',
     description:
-      'Quesillo is a very popular flan in Venezuela. This traditional Venezuelan dessert consists mainly of eggs, milk, condensed milk, caramelized sugar and vanilla extract. It is usually prepared in a large tin, at the bottom of which a thin layer of caramel has been placed beforehand. It is often eaten for birthdays and traditional celebrations. Traditionally, it is cooked in the oven in a bain-marie for an hour. The preparation is very liquid and solidifies during cooking.',
+      'Quesillo is a very popular flan in Venezuela. This traditional Venezuelan dessert consists mainly of eggs, milk, condensed milk, caramelized sugar and vanilla extract. It is usually prepared in a large tin, at the bottom of which a thin layer of caramel has been placed beforehand. It is often eaten for birthdays and traditional celebrations. Traditionally, it is cooked in the oven in a bain-marie for an hour.',
     meal: 'Dessert',
     reviews: []
   },
@@ -229,7 +229,7 @@ const foodItems = [
     picture:
       'https://bloximages.newyork1.vip.townnews.com/feastmagazine.com/content/tncms/assets/v3/editorial/c/3b/c3b8a95e-7fa4-11ec-b235-bf7f8183f711/61f2ee5b37dd1.image.jpg?resize=1200%2C800',
     description:
-      'Venezuelan Fried Pastries best called Pastelitos, are among the most beloved street food options along with Arepas, Empanadas, and Tequeños in Venezuela. Venezuelans eat these flaky wheat-based pastries for breakfast, lunch, dinner, as a snack or as "pasapalos" (appetizers) at parties. They are super versatile and can be filled with almost anything, (fresh cheese, beef, chicken, fish, rice and meat or seafood stews).',
+      'Venezuelan Fried Pastries best called "Pastelitos", are among the most beloved street food options in Venezuela. Venezuelans eat these flaky wheat-based pastries for breakfast, dinner, or as a snack or as "pasapalos" (appetizers) at parties. They are super versatile and can be filled with almost anything, (cheese, beef, chicken, rice and meat or seafood stews).',
     meal: 'Appetizer',
     reviews: []
   },
@@ -259,7 +259,7 @@ const foodItems = [
     picture:
       'https://i0.wp.com/guavabykeyma.com/wp-content/uploads/2021/07/20210627_011726709_iOS-scaled.jpg?fit=2560%2C1920&ssl=1',
     description:
-      'Mandocas are flavored corn fritters that are deep-fried cornmeal rings. These tasty treats are usually served at breakfast and eaten with butter and cheese while still hot. They are made with papelon or brown sugar cane, allspice, cinnamon, anise seeds, white cornmeal, plantains, and Venezuelan fresh white cheese. This sweet treat from the south is a culinary treat for the ages.',
+      'Mandocas are flavored corn fritters that are deep-fried cornmeal rings. These tasty treats are usually served at breakfast and eaten with butter and cheese while still hot. They are made with papelon or brown sugar cane, allspice, cinnamon, anise seeds, white cornmeal, and plantains.',
     meal: 'Appetizer',
     reviews: []
   }
