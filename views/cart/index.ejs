@@ -1,18 +1,26 @@
 <%- include('../partials/header') %>
 
-  <section id="cart">
-    <% if (user) { %>
-      <% itemsInCart.forEach(itemInCart => { %>
-      <h1>[<%= itemInCart.amount %>] <%= itemInCart.item.name %></h1>
-      <p>price: $<%= itemInCart.item.price %></p>
-      <form action="/in-cart-items/<%= itemInCart.item._id %>?_method=DELETE" method="POST">
-        <button type="submit">Delete</button>
-      </form> 
-      <% }) %>
-      <h1>TOTAL: <%= (Math.round(totalAmount * 100) / 100).toFixed(2) %></h1>
-    <% } else {%>
-      <h1>OH NO! <%= errorMsg %></h1>
-    <% } %>
+<% if (user) { %>
+  <h1 id="total-amount"><span>TOTAL: <%= (Math.round(totalAmount * 100) / 100).toFixed(2) %></span></h1>
+  <section class="food-list">
+    <% itemsInCart.forEach(itemInCart => { %>
+      <a href="/foodItems/<%= itemInCart.item._id %>" class="food-list-item" id="food-cart-item">
+        <img src="<%= itemInCart.item.picture %>" alt="<%= itemInCart.item.name %>">
+        <h1><span><%= itemInCart.item.name %></span></h1>
+        <div>
+          <h2>$<%= itemInCart.item.price %><span>/ea</span></h2>
+          <form action="/in-cart-items/<%= itemInCart.item._id %>?_method=DELETE" method="POST">
+            <button type="submit">DELETE</button>
+          </form> 
+        </div>
+        <div id="item-amount"><%= itemInCart.amount %> item(s)</div>
+      </a>
+    <% }) %>
   </section>
+    <% } else {%>
+      <section id="empty-cart-list">
+        <h1>OH NO! <%= errorMsg %></h1>
+      </section>
+    <% } %>
 
 <%- include('../partials/footer') %>

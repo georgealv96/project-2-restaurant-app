@@ -1,8 +1,8 @@
 <%- include('../partials/header') %>
 
-<section id="food-list">
+<section class="food-list">
   <% foodItems.forEach(item => { %>
-    <a href="/foodItems/<%= item._id %>" id="food-list-item">
+    <a href="/foodItems/<%= item._id %>" class="food-list-item">
       <img src="<%= item.picture %>" alt="<%= item.name %>">
       <h1><span><%= item.name %></span></h1>
       <div>

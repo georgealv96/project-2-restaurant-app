@@ -3,6 +3,9 @@
   margin: 0;
 }
 
+body {
+  background-color: lightgray;
+}
 
 a {
   text-decoration: none;
@@ -80,24 +83,23 @@ header a {
   margin-right: 5vw;
 }
 
-/* STYLING views/foodItems/index FROM HERE */
+/* STYLING foodItems/index AND cart/index FROM HERE */
 
-#food-list {
-  background-color: lightgray;
+.food-list {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 3vmin 0;
+  padding: 3vmin 2vmin;
 }
 
-#food-list-item {
+.food-list-item {
   background-color: brown;
   width: 40vmin;
   height: 62vmin;
-  margin: 3vmin 0;
+  margin: 3vmin 2vmin;
 }
 
-#food-list-item > h1 {
+.food-list-item > h1 {
   /* background-color: blue; */
   display: flex;
   justify-content: center;
@@ -109,24 +111,24 @@ header a {
   padding: 2vmin 2vmin;
 }
 
-#food-list-item > div {
+.food-list-item > div {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   height: 15vmin;
 }
 
-#food-list-item h2 {
+.food-list-item h2 {
   font-size: 6vmin;
 }
 
-#food-list-item > img {
+.food-list-item img {
   display: block;
   width: 40vmin;
   height: 30vmin;
 }
 
-#food-list-item button {
+.food-list-item button {
   height: 6vmin;
   width: 10vmin;
   color: brown;
@@ -134,9 +136,21 @@ header a {
   border-radius: 10%;
 }
 
-/* END OF views/foodItems/index STYLING */
+h2 > span {
+  font-size: 4vmin;
+}
 
-/* STYLING views/foodItems/show */
+#food-cart-item {
+  height: 69vmin;
+}
+
+#item-amount {
+  height: 5vmin;
+  padding: 2vmin 0 2vmin 0;
+  font-size: 4vmin;
+}
+
+/* STYLING foodItems/show FROM HERE*/
 
 #show-item img {
   width: 60vmin;
