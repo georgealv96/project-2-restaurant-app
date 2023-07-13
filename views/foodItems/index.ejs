@@ -3,14 +3,18 @@
 <section id="food-list">
   <% foodItems.forEach(item => { %>
     <a href="/foodItems/<%= item._id %>" id="food-list-item">
-      <h2><%= item.name %></h2>
       <img src="<%= item.picture %>" alt="<%= item.name %>">
-      <h3>$<%= item.price %></h3>
-      <% if (user) { %>
-        <form action="/foodItems/<%= item._id %>?_method=PUT" method="POST">
-          <button type="submit">Add to Cart</button>
-        </form>
-      <% } %>
+      <h1><span><%= item.name %></span></h1>
+      <div>
+        <h2>$<%= item.price %></h2>
+        <% if (user) { %>
+          <form action="/foodItems/<%= item._id %>?_method=PUT" method="POST">
+            <button type="submit"><span class="material-symbols-outlined">
+              shopping_cart
+              </span></button>
+          </form>
+        <% } %>
+      </div>
     </a>
   <% }) %>
 </section>

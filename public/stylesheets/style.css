@@ -3,21 +3,28 @@
   margin: 0;
 }
 
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(44, 210, 55);
-  color: white;
+  color: brown;
   width: 100vw;
+  height: 10vh;
   /* position: fixed;
   top: 0;
   left: 0; */
 }
 
 #logo {
-  padding-left: 10vmin;
-  font-size: 6vmin;
+  padding-left: 15vmin;
+  font-size: 8vmin;
 }
 
 #nav-links {
@@ -28,9 +35,9 @@ header {
   font-family: 'Outfit', sans-serif;
 }
 
-a {
+header a {
   text-decoration: none;
-  color: white;
+  color: brown;
 }
 
 #home-footer {
@@ -76,21 +83,55 @@ a {
 /* STYLING views/foodItems/index FROM HERE */
 
 #food-list {
+  background-color: lightgray;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  padding: 3vmin 0;
 }
 
 #food-list-item {
-  background-color: gray;
-  width: 50vmin;
-  height: 40vmin;
-  margin: 1vmin;
+  background-color: brown;
+  width: 40vmin;
+  height: 62vmin;
+  margin: 3vmin 0;
+}
+
+#food-list-item > h1 {
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: 'Comfortaa', cursive;
+  height: 17vmin;
+  font-size: 5vmin;
+  padding: 2vmin 2vmin;
+}
+
+#food-list-item > div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 15vmin;
+}
+
+#food-list-item h2 {
+  font-size: 6vmin;
 }
 
 #food-list-item > img {
-  width: 30vh;
-  height: 20vh;
+  display: block;
+  width: 40vmin;
+  height: 30vmin;
+}
+
+#food-list-item button {
+  height: 6vmin;
+  width: 10vmin;
+  color: brown;
+  border-style: none;
+  border-radius: 10%;
 }
 
 /* END OF views/foodItems/index STYLING */
