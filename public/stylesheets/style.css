@@ -243,21 +243,69 @@ h2 > span {
 }
 
 #show-item-reviews > h3 {
-  font-size: 6vmin;
-  padding: 0 0 2vmin 35vmin;
+  font-size: 7vmin;
+  /* text-align: center; */
+  font-family: 'Outfit', sans-serif;
+  margin: 0 0 3vmin 10vmin;
 }
 
 #review {
   display: flex;
   flex-direction: column;
   /* background-color: gray; */
-  margin: 0 0 2vmin 8vmin;
+  margin: 0 15vmin 3vmin 10vmin;
 }
 
 #review > h4 {
-  font-size: 4vmin;
+  font-size: 5vmin;
+  font-family: 'Courgette', cursive;
+}
+
+#review span {
+  font-size: 3vmin;
+  font-family: 'Outfit', sans-serif;
 }
 
 #review > p {
-  padding: 2vmin 3vmin;
+  padding: 1vmin 0;
+  overflow-wrap: break-word;
+  font-size: 3vmin;
+  font-family: 'Outfit', sans-serif;
+}
+
+textarea {
+  width: 60vw;
+  height: 10vmin;
+  resize: none;
+  margin: 0 0 3vmin 10vmin;
+  font-size: 3vmin;
+  padding-left: 2vmin;
+}
+
+#show-item-reviews input {
+  position: relative;
+  bottom: 5vmin;
+  height: 5vmin;
+  width: 20vmin;
+  margin-left: 1vmin;
+  background-color: brown;
+  border-style: none;
+  color: white;
+  cursor: pointer;
+  font-size: 2vmin;
+}
+
+#review button {
+  margin: 1vmin 0;
+  height: 3vmin;
+  background-color: brown;
+  border-style: none;
+  color: white;
+  cursor: pointer;
+}
+
+#show-item-reviews h1 {
+  margin: 0 0 3vmin 10vmin;
+  font-size: 4vmin;
+  font-family: 'Outfit', sans-serif;
 }

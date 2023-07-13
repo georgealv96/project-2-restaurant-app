@@ -5,7 +5,7 @@
     <img src="<%= foodItem.picture %>" alt="<%= foodItem.name %>">
     <% if (user) { %>
       <form action="/foodItems/<%= foodItem._id %>?_method=PUT" method="POST">
-        <button type="submit">Add to My Cart</button>
+        <button type="submit">+ Add to My Cart</button>
       </form>
     <% } %>
   </div>
@@ -15,9 +15,15 @@
     <h2>$<%= foodItem.price %></h2>
   </div>
   <div id="show-item-reviews">
-    <h3>Reviews</h3>
+    <h3>Reviews:</h3>
+    <% if (user) { %>
+      <form action="/foodItems/<%= foodItem._id %>/reviews" method="POST">
+        <textarea name="content" placeholder="We'd love to know what you think!"></textarea>
+        <input type="submit" value="SEND">
+      </form>
+    <% } %>
     <% if (foodItem.reviews.length === 0) { %>
-      <h1>empty!</h1> 
+      <h1>No reviews yet.</h1> 
     <% } else { %>
       <% foodItem.reviews.forEach(review => { %>
         <div id="review">
@@ -25,17 +31,11 @@
           <p><%= review.content %></p>
           <% if (user && user._id.equals(review.user)) { %>
             <form action="/reviews/<%= review._id %>?_method=DELETE" method="POST">
-              <button type="submit">Delete</button>
+              <button type="submit">DELETE</button>
             </form> 
           <% } %>
         </div>
       <% }) %>
-    <% } %>
-    <% if (user) { %>
-      <form action="/foodItems/<%= foodItem._id %>/reviews" method="POST">
-        <textarea name="content"></textarea>
-        <input type="submit" value="Add Review">
-      </form>
     <% } %>
   </div>
 </section>
