@@ -7,6 +7,7 @@ const cookieParser = require('cookie-parser')
 const session = require('express-session')
 const passport = require('passport')
 const methodOverride = require('method-override')
+const MongoStore = require('connect-mongo')
 
 require('dotenv').config()
 // connect to the MongoDB with mongoose
@@ -36,6 +37,9 @@ app.use(methodOverride('_method'))
 // mount the session middleware
 app.use(
   session({
+    store: MongoStore.create({
+      mongoUrl: process.env.DATABASE_URL
+    }),
     secret: process.env.SECRET,
     resave: false,
     saveUninitialized: true
