@@ -20,9 +20,6 @@ header {
   color: brown;
   width: 100vw;
   height: 10vh;
-  /* position: fixed;
-  top: 0;
-  left: 0; */
 }
 
 #logo {
@@ -61,11 +58,6 @@ header a {
   border-radius: 50%;
 }
 
-/* #home-footer img:hover {
-  height: 15vh;
-  width: 15vh;
-} */
-
 #home-footer > div {
   height: 20vh;
   width: 70vw;
@@ -100,7 +92,6 @@ header a {
 }
 
 .food-list-item > h1 {
-  /* background-color: blue; */
   display: flex;
   justify-content: center;
   text-align: center;
@@ -162,6 +153,20 @@ h2 > span {
   color: white;
 }
 
+.empty-cart {
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vmin;
+  font-family: 'Outfit', sans-serif;
+  color: brown;
+}
+
+#no-user-cart {
+  height: 80vh;
+}
+
 /* STYLING foodItems/show FROM HERE*/
 
 #show-item {
@@ -182,7 +187,6 @@ h2 > span {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  /* background-color: blue; */
 }
 
 #show-item img {
@@ -239,12 +243,10 @@ h2 > span {
   padding-top: 3vmin;
   min-height: 20vh;
   grid-area: reviews;
-  /* background-color: green; */
 }
 
 #show-item-reviews > h3 {
   font-size: 7vmin;
-  /* text-align: center; */
   font-family: 'Outfit', sans-serif;
   margin: 0 0 3vmin 10vmin;
 }
@@ -252,7 +254,6 @@ h2 > span {
 #review {
   display: flex;
   flex-direction: column;
-  /* background-color: gray; */
   margin: 0 15vmin 3vmin 10vmin;
 }
 
