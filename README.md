@@ -8,12 +8,12 @@ This interactive website will let you discover and learn about the food and diff
 
 ## Technologies Used:
 
--JavaScript
--Node JS
--Express
--Mongoose
--MongoDB
--EJS
+-JavaScript <br>
+-Node JS <br>
+-Express <br>
+-Mongoose <br>
+-MongoDB <br>
+-EJS <br>
 -CSS
 
 ## My experience building this project
