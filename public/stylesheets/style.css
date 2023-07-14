@@ -7,6 +7,8 @@ body {
   background-color: lightgray;
 }
 
+/* STYLING index AND partials/header FROM HERE */
+
 a {
   text-decoration: none;
   color: white;
@@ -40,7 +42,75 @@ header a {
   color: brown;
 }
 
-#home-footer {
+#home-page {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 15vh;
+  height: 90vh;
+  grid-template-areas: 
+    "home-1 home-2"
+    "home-3 home-3";
+}
+
+#home-1 {
+  font-family: 'Comfortaa', cursive;
+  grid-area: home-1;
+  margin: 6vmin 6vmin 6vmin 10vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 6vmin;
+}
+
+#home-1 > div {
+  display: flex;
+}
+
+#home-1 img {
+  width: 30vmin;
+  margin: 2vmin 0 0 4vmin;
+}
+
+#home-2 {
+  grid-area: home-2;
+  padding-left: 20vmin;
+  font-size: 2.5vmin;
+  text-decoration: underline;
+}
+
+#home-2 > h2 {
+  padding-left: 2vmin;
+}
+
+#home-2 > img {
+  height: 55vmin;
+  width: 40vmin;
+  margin: 6vmin 0 2vmin 0;
+}
+
+#home-3 {
+  grid-area: home-3;
+  padding: 2vmin 10vmin;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: brown;
+  color: white;
+  font-size: 3.5vmin;
+  font-family: 'Courgette', cursive;
+}
+
+#home-3 > a {
+  font-family: sans-serif;
+  background-color: white;
+  color: brown;
+  height: 6vmin;
+  padding: 1vmin;
+  border-radius: 1vmin;
+  cursor: pointer;
+}
+
+/* #home-footer {
   height: 20vh;
   width: 100vw;
   background-color: brown;
@@ -73,7 +143,7 @@ header a {
 
 #home-footer > button {
   margin-right: 5vw;
-}
+} */
 
 /* STYLING foodItems/index AND cart/index FROM HERE */
 
