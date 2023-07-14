@@ -110,41 +110,6 @@ header a {
   cursor: pointer;
 }
 
-/* #home-footer {
-  height: 20vh;
-  width: 100vw;
-  background-color: brown;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#home-footer img {
-  height: 13vh;
-  width: 13vh;
-  border-radius: 50%;
-}
-
-#home-footer > div {
-  height: 20vh;
-  width: 70vw;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-#home-footer {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-#home-footer > button {
-  margin-right: 5vw;
-} */
-
 /* STYLING foodItems/index AND cart/index FROM HERE */
 
 .food-list {

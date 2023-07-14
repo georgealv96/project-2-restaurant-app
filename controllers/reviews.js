@@ -25,16 +25,17 @@ async function create(req, res) {
 
 async function deleteReview(req, res, next) {
   try {
+    // Finding the food item with the review and the review
     const foodItem = await FoodItem.findOne({
       'reviews._id': req.params.id,
       'reviews.user': req.user._id
     })
-
+    // If the food item wasn't found, redirect the user to the food list
     if (!foodItem) return res.redirect('/foodItems')
-
+    // Removing the review and saving the changes to the database
     await foodItem.reviews.remove(req.params.id)
     await foodItem.save()
-
+    // Redirecting the user to that specific food item page
     res.redirect(`/foodItems/${foodItem._id}`)
   } catch (err) {
     res.send(err)
