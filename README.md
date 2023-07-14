@@ -1,35 +1,35 @@
-# passport-boilerplate
+# "Vfood" Restaurant Web Application
 
+### Link to the website: https://wild-erin-brown-bear-coat.cyclic.app
 
-This is your passport boilerplate.
+This project is a simulation to a web application for a Venezuelan restaurant. I wanted to share a little bit about my culture and where I am from through something we all love: food!
 
-## Setup 
+This interactive website will let you discover and learn about the food and different dishes from Venezuela, leave a comment or thought that you may have about every single one of them, and also add the ones you'd like to get into a virtual cart.
 
-1. Clone the repo
-2. Rename the folder to your Project
-3. Delete the `.git` file, when you are in the root of the file, you can press `ls` and you should see a `.git` file, then go ahead and run `rm -rf .git`
+## Technologies Used:
 
+-JavaScript
+-Node JS
+-Express
+-Mongoose
+-MongoDB
+-EJS
+-CSS
 
-#### Setup your git repo
-0. Setup your `.env` file and add all the things you need! (look at mongoose movies for reference!)
-1. in the project root `git init`
-2. `git add .` to add all the starter code
-3. `git commit -m "setup boilerplate"` 
-4. go to github and create your github and create a repo (Without a readme or liscense you can add that later!)
-5. copy the remote address
-6. In your terminal add the remote `git remote add origin yourGithubRepo'sAddressGoesHere`
-7. `git pull origin main` If a screen pulls up asking you to do something just press `:q` and then `enter` (thats vim btw :) )
-8. `git push origin main`
+## My experience building this project
 
-#### Setup your login (THE APP WON'T WORK until you do, no VIEWS are setup, or the landing route)
+This project was sort of challenging but it felt really good accomplishing each thing, step by step. I've realized that there's so much I can improve and fix in this project, so the experience is not over yet.
 
-0. Setup your database connection string
-1. Then Setup Your User Model, 
-2. Follow the steps from the lesson plan to get your Google login credentials for your `.env` file (create the file if you haven't), or you can just copy the ones from earlier if you want to reuse them.
-3. Setup the Code in your config passport 
-4. Setup your callback routes in your `routes/index`
-5. Setup a view and test your login!
+## Some of the biggest challenges were:
 
-#### Make a commit 
+-Building certain relationships between some models. <br>
+-Routing and creating the cart so every user could get their own. <br>
+-Making it so the items added to a cart wouldn't show repeatedly if the user decided to add more than one of the same item but just show them once with their respective quantity amount.
 
-```git commit -m "setup up oauth and User Model"```
+## Screenshots of the website:
+
+![Alt text](public/images/img1.png)
+![Alt text](public/images/img2.png)
+![Alt text](public/images/img3.png)
+![Alt text](public/images/img4.png)
+![Alt text](public/images/img5.png)
